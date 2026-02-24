@@ -10,7 +10,7 @@ CITY = "Paris"
 def get_weather() -> None:
     api_key = os.getenv("API_KEY")
     if not api_key:
-        print("ERROR: API_KEY environment variable is not set", file=sys.stderr)
+        print("ERROR: API_KEY environment variable is not set", file=sys.stderr) # noqa501
         sys.exit(1)
 
     params = {
